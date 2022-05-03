@@ -25,14 +25,16 @@
     <body>
         <div style="font-size: 3vh; position: relative; position: static; color: rgb(255, 183, 0); text-align: center; text-shadow: 1px 1px rgba(255, 255, 255, 0.877);">
             <h1>Українська література</h1>
+            <p>Підказка: натискаючи на дати, можна пееходити на інші зображення робіт за відповідні числа</p>
         </div>
-        <img id="1" src="./ualitrpics/29.04.2022(1).jpg" alt="Картинка" style="width: 30%; margin: auto; position: relative; left: 5vw">
-        <img id="2" src="./ualitrpics/29.04.2022(2).jpg" alt="Картинка" style="width: 30%; margin: auto; position: relative; left: 5vw"> 
+        <img id="1" src="./ualitrpics/02.05.2022(1).jpg" alt="Картинка" style="width: 30%; margin: auto; position: relative; left: 5vw">
+        <img id="2" src="./ualitrpics/02.05.2022(2).jpg" alt="Картинка" style="width: 30%; margin: auto; position: relative; left: 5vw"> 
         <img id="3" src="./phi.webp" alt="Картинка" style="width: 30%; margin: auto; position: relative; left: 5vw"> 
         <div>
-            <button id="15042022" style="position: relative; left:5vw; top: 5vh">15.04.2022</button>
-            <button id="22042022" style="position: relative; left:5vw; top: 5vh">22.04.2022</button>
-            <button id="29042022" disabled style="position: relative; left:5vw; top: 5vh">29.04.2022</button>
+            <button id="15042022" style="position: relative; left:5vw; top: 2vh">15.04.2022</button>
+            <button id="22042022" style="position: relative; left:5vw; top: 2vh">22.04.2022</button>
+            <button id="29042022" style="position: relative; left:5vw; top: 2vh">29.04.2022</button>
+            <button id="02052022" disabled style="position: relative; left:5vw; top: 2vh">02.05.2022</button>
         </div>    
     </body>
     <script>
@@ -43,6 +45,7 @@
         document.getElementById("15042022").disabled = true;
         document.getElementById("22042022").disabled = false;
         document.getElementById("29042022").disabled = false;
+        document.getElementById("02052022").disabled = false;
     };
     document.getElementById("22042022").onclick = function () {
         document.getElementById("1").src="./ualitrpics/22.04.2022.jpg";
@@ -51,6 +54,7 @@
         document.getElementById("15042022").disabled = false;
         document.getElementById("22042022").disabled = true;
         document.getElementById("29042022").disabled = false;
+        document.getElementById("02052022").disabled = false;
     };
     document.getElementById("29042022").onclick = function () {
         document.getElementById("1").src="./ualitrpics/29.04.2022(1).jpg";
@@ -59,6 +63,16 @@
         document.getElementById("15042022").disabled = false;
         document.getElementById("22042022").disabled = false;
         document.getElementById("29042022").disabled = true;
+        document.getElementById("02052022").disabled = false;
+    };
+    document.getElementById("02052022").onclick = function () {
+        document.getElementById("1").src="./ualitrpics/02.05.2022(1).jpg";
+        document.getElementById("2").src="./ualitrpics/02.05.2022(2).jpg";
+        document.getElementById("3").src="./phi.webp";
+        document.getElementById("15042022").disabled = false;
+        document.getElementById("22042022").disabled = false;
+        document.getElementById("29042022").disabled = false;
+        document.getElementById("02052022").disabled = true;
     };
     </script>
 </html>
