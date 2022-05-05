@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta http-equip="Content-Type" content="text/html ; charset=UTF-8"/>
+        <link rel="shortcut icon" href="./book-icon.png" type="image/x-icon">
+        <title>Зар. літ.</title>
+        <style>
+            body{
+                background-image: url(./books.webp);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+            button {
+                background-color: transparent;
+                background-repeat: no-repeat;
+                border: none;
+                cursor: pointer;
+                overflow: hidden;
+                outline: none;
+                color: rgb(255, 183, 0);
+                text-shadow: 1px 1px rgba(255, 255, 255, 0.877);
+            }
+        </style>
+    </head>
+    <body>
+        <div style="font-size: 3vh; position: relative; position: static; color: rgb(255, 183, 0); text-align: center; text-shadow: 1px 1px rgba(255, 255, 255, 0.877);">
+            <h1>Зарубіжна література</h1>
+        </div>
+        <img id="1" src="./foreignlitrpics/05.05.2022(1).jpg" alt="Картинка" style="width: 30%; margin: auto; position: relative; left: 5vw">
+        <img id="2" src="./foreignlitrpics/05.05.2022(2).jpg" alt="Картинка" style="width: 30%; margin: auto; position: relative; left: 5vw"> 
+        <img id="3" src="./foreignlitrpics/05.05.2022(3).jpg" alt="Картинка" style="width: 30%; margin: auto; position: relative; left: 5vw"> 
+        <div>
+            <button id="21042022" style="position: relative; left:5vw; top: 5vh">21.04.2022</button>
+            <button id="05052022" disabled style="position: relative; left:5vw; top: 5vh">05.05.2022</button>
+        </div>    
+    </body>
+    <script>
+        document.getElementById("21042022").onclick = function () {
+            document.getElementById("1").src="./foreignlitrpics/21.04.2022(1).jpg";
+            document.getElementById("2").src="./foreignlitrpics/21.04.2022(2).jpg";
+            document.getElementById("3").src="./foreignlitrpics/21.04.2022(3).jpg";
+            document.getElementById("21042022").disabled = true;
+            document.getElementById("05052022").disabled = false;
+        };
+        document.getElementById("05052022").onclick = function () {
+            document.getElementById("1").src="./foreignlitrpics/05.05.2022(1).jpg";
+            document.getElementById("2").src="./foreignlitrpics/05.05.2022(2).jpg";
+            document.getElementById("3").src="./foreignlitrpics/05.05.2022(3).jpg";
+            document.getElementById("21042022").disabled = false;
+            document.getElementById("05052022").disabled = true;
+        };
+    </script>
+</html>
